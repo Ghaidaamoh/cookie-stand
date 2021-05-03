@@ -33,7 +33,7 @@ let seattle = {
             this.totalPerHour += this.salesPerHour[i];
         }
     },
-    render: function () {
+    cookies: function () {
         let container = document.getElementById('sales');
         let h2El = document.createElement('h2');
         container.appendChild(h2El);
@@ -54,7 +54,7 @@ let seattle = {
 }
 seattle.randomCustNumber();
 seattle.salesCookies();
-seattle.render();
+seattle.cookies();
 
 let tokyo = {
     storeName: 'Tokyo',
@@ -75,7 +75,7 @@ let tokyo = {
             this.totalPerHour += this.salesPerHour[i];
         }
     },
-    render: function () {
+    cookies: function () {
         let container = document.getElementById('sales');
         let h2El = document.createElement('h2');
         container.appendChild(h2El);
@@ -96,7 +96,7 @@ let tokyo = {
 }
 tokyo.randomCustNumber();
 tokyo.salesCookies();
-tokyo.render();
+tokyo.cookies();
 
 let Dubai = {
     storeName: 'Dubai',
@@ -117,7 +117,7 @@ let Dubai = {
             this.totalPerHour += this.salesPerHour[i];
         }
     },
-    render: function () {
+    cookies: function () {
         let container = document.getElementById('sales');
         let h2El = document.createElement('h2');
         container.appendChild(h2El);
@@ -138,7 +138,7 @@ let Dubai = {
 }
 Dubai.randomCustNumber();
 Dubai.salesCookies();
-Dubai.render();
+Dubai.cookies();
 
 let Paris = {
     storeName: 'Paris',
@@ -159,7 +159,7 @@ let Paris = {
             this.totalPerHour += this.salesPerHour[i];
         }
     },
-    render: function () {
+    cookies: function () {
         let container = document.getElementById('sales');
         let h2El = document.createElement('h2');
         container.appendChild(h2El);
@@ -180,7 +180,7 @@ let Paris = {
 }
 Paris.randomCustNumber();
 Paris.salesCookies();
-Paris.render();
+Paris.cookies();
 
 let Lima = {
     storeName: 'Lima',
@@ -201,7 +201,7 @@ let Lima = {
             this.totalPerHour += this.salesPerHour[i];
         }
     },
-    render: function () {
+    cookies: function () {
         let container = document.getElementById('sales');
         let h2El = document.createElement('h2');
         container.appendChild(h2El);
@@ -222,4 +222,4 @@ let Lima = {
 }
 Lima.randomCustNumber();
 Lima.salesCookies();
-Lima.render();
+Lima.cookies();
