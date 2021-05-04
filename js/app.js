@@ -93,15 +93,16 @@ function renderFooter() {
   tdElement.textContent = ' Totals';
   headerrow.appendChild(tdElement);
 
-  var runningTotal;
+ 
 
   for (var i = 0; i < hours.length; i++) {
-    var tdElement = document.createElement('td');
     var total = 0;
+    var runningTotal=0;
     for (var j = 0; j < city.length; j++) {
-      total += city[i].custPerHourArray[j];
-      runningTotal += city[i].custPerHourArray[j];
+      total += city[j].hourlyTotal[i];
+      runningTotal += city[j].hourlyTotal[i];
     }
+    var tdElement = document.createElement('td');
     tdElement.textContent = total;
     headerrow.appendChild(tdElement);
 
