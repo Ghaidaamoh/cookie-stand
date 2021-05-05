@@ -83,9 +83,9 @@ rendertabels();
 for (var i = 0; i < city.length; i++) {
   city[i].render();
 }
-rendertotals();
+rendertotal();
 
-function rendertotals() {
+function rendertotal() {
   var headerrow = document.createElement('tr');
   tableBody.appendChild(headerrow);
   var tdElement = document.createElement('td');
