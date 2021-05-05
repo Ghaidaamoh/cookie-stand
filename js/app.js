@@ -62,7 +62,7 @@ for (var z = 0; z < city.length; z++) {
 
 var tableBody = document.getElementById('dataTable');
 
-function renderheader() {
+function rendertabels() {
   var headerrow = document.createElement('tr');
   var headerstore = document.createElement('th');
   headerstore.textContent = 'Locations';
@@ -79,13 +79,13 @@ function renderheader() {
   headerrow.appendChild(headertotal);
 }
 
-renderheader();
+rendertabels();
 for (var i = 0; i < city.length; i++) {
   city[i].render();
 }
-renderFooter();
+rendertotals();
 
-function renderFooter() {
+function rendertotals() {
   var headerrow = document.createElement('tr');
   tableBody.appendChild(headerrow);
   var tdElement = document.createElement('td');
@@ -96,22 +96,18 @@ function renderFooter() {
 
   for (var i = 0; i < hours.length; i++) {
     var total = 0;
-    var runningTotal=0;
+    var allTotal=0;
     for (var j = 0; j < city.length; j++) {
       total += city[j].hourlyTotal[i];
-      runningTotal += city[j].hourlyTotal[i];
+     allTotal += city[j].hourlyTotal[i];
     }
     var tdElement = document.createElement('td');
-
-
-    tdElement.textContent = total;
-
     headerrow.appendChild(tdElement);
     tdElement.textContent = total;
    
   }
   var tdElement = document.createElement('td');
   headerrow.appendChild(tdElement);
-  tdElement.textContent = runningTotal;
+  tdElement.textContent = allTotal;
   
 }
