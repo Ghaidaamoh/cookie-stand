@@ -27,7 +27,7 @@ cookies.prototype.calcCookiesPerHour = function () {
 
 cookies.prototype.render = function () {
   this.calcCookiesPerHour();
-  var tableEl = document.getElementById('dataTable');
+  var tableEl = document.getElementById('DataTable');
 
   var trElement = document.createElement('tr');
   tableEl.appendChild(trElement);
@@ -60,7 +60,7 @@ for (var z = 0; z < city.length; z++) {
   city[z].calcCookiesPerHour();
 }
 
-var tableBody = document.getElementById('dataTable');
+var tableBody = document.getElementById('DataTable');
 
 function rendertable() {
   var headerrow = document.createElement('tr');
