@@ -62,7 +62,7 @@ for (var z = 0; z < city.length; z++) {
 
 var tableBody = document.getElementById('DataTable');
 
-function rendertable() {
+function rendertables() {
   var headerrow = document.createElement('tr');
   var headerstore = document.createElement('th');
   headerstore.textContent = 'Locations';
@@ -79,7 +79,7 @@ function rendertable() {
   headerrow.appendChild(headertotal);
 }
 
-rendertable();
+rendertables();
 for (var i = 0; i < city.length; i++) {
   city[i].render();
 }
