@@ -27,7 +27,7 @@ cookies.prototype.calcCookiesPerHour = function () {
 
 cookies.prototype.render = function () {
   this.calcCookiesPerHour();
-  var tableEl = document.getElementById('dataTable');
+  var tableEl = document.getElementById('DataTable');
 
   var trElement = document.createElement('tr');
   tableEl.appendChild(trElement);
@@ -60,9 +60,9 @@ for (var z = 0; z < city.length; z++) {
   city[z].calcCookiesPerHour();
 }
 
-var tableBody = document.getElementById('dataTable');
+var tableBody = document.getElementById('DataTable');
 
-function rendertabels() {
+function rendertable() {
   var headerrow = document.createElement('tr');
   var headerstore = document.createElement('th');
   headerstore.textContent = 'Locations';
@@ -79,7 +79,7 @@ function rendertabels() {
   headerrow.appendChild(headertotal);
 }
 
-rendertabels();
+rendertable();
 for (var i = 0; i < city.length; i++) {
   city[i].render();
 }
@@ -99,9 +99,13 @@ function rendertotal() {
     var allTotal=0;
     for (var j = 0; j < city.length; j++) {
       total += city[j].hourlyTotal[i];
-     allTotal += city[j].hourlyTotal[i];
+      allTotal += city[j].hourlyTotal[i];
     }
     var tdElement = document.createElement('td');
+
+
+    tdElement.textContent = total;
+
     headerrow.appendChild(tdElement);
     tdElement.textContent = total;
    
