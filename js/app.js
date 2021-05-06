@@ -96,7 +96,7 @@ function rendertotal() {
 
   for (let i = 0; i < hours.length; i++) {
     let total = 0;
-    let allTotal=0;
+    let allTotal =0;
     for (let j = 0; j < city.length; j++) {
       total += city[j].hourlyTotal[i];
       allTotal += city[j].hourlyTotal[i];
