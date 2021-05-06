@@ -31,12 +31,12 @@ header ul li a {
   text-decoration: none;
 }
 
-header ul li a:hover:not(.active) {
+header ul li a:hover:not(.act) {
   background-color: #fa8072;
   
 }
 
-.active {
+.act {
   background-color: #73ecfa;
   
 }
