@@ -10,7 +10,7 @@ th {
 }
 
 
-header>ul {
+header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,11 +19,11 @@ header>ul {
   display: inline-block;
 }
 
-header>ul>li {
+header ul li {
   float: left;
 }
 
-header>ul>li a {
+header ul li a {
   display: block;
   color: black;
   text-align: center;
@@ -31,7 +31,7 @@ header>ul>li a {
   text-decoration: none;
 }
 
-header>ul>li a:hover:not(.active) {
+header ul li a:hover:not(.active) {
   background-color: #fa8072;
   
 }
@@ -62,6 +62,7 @@ header>ul>li a:hover:not(.active) {
 }
 
 
+
 main  article {
   width: 350px;
   text-align: center;
@@ -76,7 +77,7 @@ main  article  img {
   width: 350px;
   border: 0 dotted black;
   padding: 5px;
-  border-color: #fa8072;
+  border-color: #e9958b;
   border-style: solid;
   border-width: 5px;
 }
@@ -85,7 +86,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fa8072;
+  background-color: #e9958b;
 }
 
 li a {
