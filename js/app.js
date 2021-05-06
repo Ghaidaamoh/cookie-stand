@@ -113,9 +113,6 @@ function rendertotal() {
 
 }
 
-  
-}
-
 let cookiesForm = document.getElementById('cookiesForm');
 cookiesForm.addEventListener('submit', addingSalmonCookies);
 function addingSalmonCookies(event) {
