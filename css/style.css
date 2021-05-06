@@ -103,5 +103,13 @@ h1{
     background-color: #bb6c63;
     display: inline-block;
   }
+   
+  #DataTable{
+
+    overflow: hidden;
+    background-color: #bb6c63;
+    display: inline-block;
+
+  }
   
   
