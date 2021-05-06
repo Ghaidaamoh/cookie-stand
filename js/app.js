@@ -111,8 +111,8 @@ function rendertotal() {
   tdElement3.textContent = allTotal;
 
 
-
 }
+
   
 }
 
