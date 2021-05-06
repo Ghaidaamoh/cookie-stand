@@ -110,5 +110,26 @@ function rendertotal() {
   headerrow.appendChild(tdElement3);
   tdElement3.textContent = allTotal;
 
+
+}
+
   
 }
+
+let cookiesForm = document.getElementById('cookiesForm');
+cookiesForm.addEventListener('submit', addingSalmonCookies);
+function addingSalmonCookies(event) {
+  event.preventDefault();
+  let name = event.target.name.value;
+  let minCust = event.target.minCust.value;
+  let maxCust = event.target. maxCust.value;
+  let  averageCookieSale = event.target.averageCookieSal.value;
+  let openTime = event.target.openTime .value;
+  let  closeTime = event.target. closeTime .value;
+
+  let newCookies = new cookies(name,minCust, maxCust,  averageCookieSale,openTime, closeTime)
+  newCookies.calcCookiesPerHour();
+  newCookies.render();
+ 
+}
+
