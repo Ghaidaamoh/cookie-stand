@@ -61,11 +61,8 @@ header>ul>li a:hover:not(.active) {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header {
-  background-image: url('img/salmon.png');
-}
 
-main > article {
+main  article {
   width: 350px;
   text-align: center;
   display: inline-block;
@@ -74,7 +71,7 @@ main > article {
   padding: 5px;
 }
 
-main > article > img {
+main  article  img {
   height: 350px;
   width: 350px;
   border: 0 dotted black;
@@ -99,8 +96,5 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #fa8072;
-}
 
 
