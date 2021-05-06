@@ -110,6 +110,9 @@ function rendertotal() {
   headerrow.appendChild(tdElement3);
   tdElement3.textContent = allTotal;
 
+
+
+}
   
 }
 
