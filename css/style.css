@@ -15,7 +15,7 @@ header ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fa8072;
+  background-color: #bb6c63;
   display: inline-block;
 }
 
@@ -32,12 +32,12 @@ header ul li a {
 }
 
 header ul li a:hover:not(.act) {
-  background-color: #fa8072;
+  background-color: #bb6c63;
   
 }
 
 .act {
-  background-color: #73ecfa;
+  background-color: #7bd0da;
   
 }
  #img1{
@@ -55,10 +55,9 @@ header ul li a:hover:not(.act) {
  body {
   background-color: #f0e6e5;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(211, 211, 211, 1);
   text-align: center;
   color: rgb(58, 52, 52);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
 
 
