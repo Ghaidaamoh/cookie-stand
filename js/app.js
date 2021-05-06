@@ -113,7 +113,7 @@ function rendertotal() {
 
 }
 
-let cookiesForm = document.getElementById('cookiesForm');
+let cookiesForm = document.getElementById('cookiesform');
 cookiesForm.addEventListener('submit', addingSalmonCookies);
 function addingSalmonCookies(event) {
   event.preventDefault();
