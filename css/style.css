@@ -96,6 +96,12 @@ h1{
     text-decoration: none;
   }
   
-  
+  #cookiesForm{
+    
+    float: left ;
+    overflow: hidden;
+    background-color: #bb6c63;
+    display: inline-block;
+  }
   
   
