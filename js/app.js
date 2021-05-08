@@ -83,6 +83,9 @@ rendertables();
 for (let y = 0; y < city.length; y++) {
   city[y].render();
 }
+
+
+
 rendertotal();
 
 function rendertotal() {
@@ -96,35 +99,32 @@ function rendertotal() {
 
   for (let i = 0; i < hours.length; i++) {
     let total = 0;
-    let allTotal =0;
+   
     for (let j = 0; j < city.length; j++) {
       total += city[j].hourlyTotal[i];
-      allTotal += city[j].hourlyTotal[i];
+      
     }
     let tdElement2 = document.createElement('td');
     headerrow.appendChild(tdElement2);
     tdElement2.textContent = total;
    
   }
-  let tdElement3 = document.createElement('td');
-  headerrow.appendChild(tdElement3);
-  tdElement3.textContent = allTotal;
 
 
 }
 
-let cookiesForm = document.getElementById('cookiesform');
-cookiesForm.addEventListener('submit', addingSalmonCookies);
+let cookiesform = document.getElementById('cookiesform');
+cookiesform.addEventListener('submit', addingSalmonCookies);
 function addingSalmonCookies(event) {
   event.preventDefault();
   let name = event.target.name.value;
   let minCust = event.target.minCust.value;
   let maxCust = event.target. maxCust.value;
-  let  averageCookieSale = event.target.averageCookieSal.value;
-  let openTime = event.target.openTime .value;
-  let  closeTime = event.target. closeTime .value;
+  let  averageCookieSale = event.target.averageCookieSale.value;
+  let openTime = event.target.openTime.value;
+  let  closeTime = event.target.closeTime.value;
 
-  let newCookies = new cookies(name,minCust, maxCust,  averageCookieSale,openTime, closeTime)
+  let newCookies = new cookies(name, minCust, maxCust,  averageCookieSale, openTime, closeTime)
   newCookies.calcCookiesPerHour();
   newCookies.render();
  
